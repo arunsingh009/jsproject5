@@ -44,14 +44,23 @@ function hash() {
     "#hoodmemes",
     "#memesoftheday",
   ];
-  const genrated = hashtag.sort(() => Math.random() - Math.random()).slice(0, x-1);
-  document.getElementById("output").innerHTML ="#m_e_m_e_s_w_0_r_l_d "+ genrated.join(" ");
-  a.style.border = "2px solid black";
+  // const genrated = hashtag.sort(() => Math.random() - Math.random()).slice(0, x-1);
+  // document.getElementById("output").innerHTML ="#m_e_m_e_s_w_0_r_l_d "+ genrated.join(" ");
+  // a.style.border = "2px solid black";
 
   let y = document.getElementById("bt2");
-  if (x < 5) {
-    alert("value must be grater then 10");
-  } else if (x > 30) {
-    alert("value must be less than 30");
-  } 
+  if (x<10) {
+    alert("value must be grater then 10 and less than or equal to 30");
+  }else if(x>30) {
+    alert("value must be grater then 10 and less than or equal to 30");
+  }
+  else {
+    const genrated = hashtag.sort(() => Math.random() - Math.random()).slice(0, x-1);
+  document.getElementById("output").innerHTML ="#m_e_m_e_s_w_0_r_l_d "+ genrated.join(" ");
+  a.style.border = "2px solid black";
+  return true;
+  }
+  // } else if (x > 30) {
+  //   alert("value must be less than 30");
+  // } 
 }
