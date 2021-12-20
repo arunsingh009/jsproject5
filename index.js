@@ -51,7 +51,9 @@ function hash() {
   let y = document.getElementById("bt2");
   if (x < 5) {
     alert("value must be grater then 10");
+    return false;
   } else if (x > 30) {
     alert("value must be less than 30");
+    return false;
   } 
 }
