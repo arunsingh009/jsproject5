@@ -24,6 +24,7 @@ main h1{
     background-color:white ;
     flex-direction: column;
     border-radius: 20px;
+   
 }
 .box{
     width: 80%;
@@ -33,37 +34,41 @@ main h1{
     justify-content: center;
 }
 .box input{
-    width: 80%;
+    width: 70%;
     height: 40px;
     border: 2px solid black;
+}
+.smallbox{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid black;
+    
 }
 .output{
     width: 80%;
     height: 40vh;
-    /* border: 2px solid black; */
     font-size: 20px;
     padding-left: 10px;
     padding-top: 10px;
-
 }
 .genbtn{
-    width: 200px;
+    width: 100px;
     height: 40px;
     background: linear-gradient(rgba(255, 0, 0, 0.534),rgba(0, 128, 0, 0.466));
     font-size: 20px;
     cursor: pointer;
 }
 
-@media(max-width:730px){
+@media(max-width:750px){
     .bigbox{
-        height: 80vh;
+        height: 85vh;
+        width: 90%;
+    }
+    .output{
+        height: 80%;
         width: 90%;
     }
     
-}
-@media(max-width:600px){
-    .output{
-        height: fit-content;
-        width: 90%;
-    }
 }
