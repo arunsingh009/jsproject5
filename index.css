@@ -43,7 +43,7 @@ main h1{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     
 }
 .output{
@@ -69,6 +69,7 @@ main h1{
     .output{
         height: 80%;
         width: 90%;
+        font-size: 15px;
     }
     
 }
