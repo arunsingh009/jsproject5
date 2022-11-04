@@ -1,7 +1,7 @@
 function hash() {
   let x = document.getElementById("count").value;
   let a = document.getElementById("output");
-  const hashtag = [
+  const old = [
     "#round2hellvine",
     "#round2hellrecords",
     "#noidagram",
@@ -45,15 +45,15 @@ function hash() {
     "#hoodmemes",
     "#memesoftheday",
   ];
-  let y = document.getElementById("bt2");
+  // let y = document.getElementById("bt2");
   if (x<10) {
     alert("value must be grater then 10 and less than or equal to 30");
   }else if(x>30) {
     alert("value must be grater then 10 and less than or equal to 30");
   }
   else {
-    const genrated = hashtag.sort(() => Math.random() - Math.random()).slice(0, x-1);
-    document.getElementById("output").innerHTML ="#memesammaaz"+ genrated.join(" ");
+    const genrated = old.sort(() => Math.random() - Math.random()).slice(0, x-1);
+    document.getElementById("output").innerHTML ="#memesammaaz "+ genrated.join(" ");
     a.style.border = "2px solid black";
     return true;
   }

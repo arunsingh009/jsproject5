@@ -22,16 +22,42 @@
                     <button onclick="hash()" class="genbtn">Genrate</button>
                 </div>
             </div>
+            <div class="categories">
+                <label for="category">Categories:</label>
+                <select name="category" id="category">
+                    <option value="old">Old Hashtags</option>
+                    <option value="indian">Indian meme Hashtags</option>
+                    <option value="new">Wordwide Hashtags</option>
+                </select>
+            </div>
             <div class="output" id="output">
 
 
             </div>
+            <div>
+                <button onclick="CopyToClipboard('output');return false;">Copy Tags</button>
+            </div>
         </div>
+        <footer>
+            <h3 style="text-align: center;">Version 2.0</h3>
+        </footer>
     </main>
+
 
 
     <script src="index.js"></script>
 
 </body>
+<script>
+    function CopyToClipboard(id) {
+        var r = document.createRange();
+        r.selectNode(document.getElementById(id));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+        alert("Tags Copied To Clipboard");
+    }
+</script>
 
 </html>
