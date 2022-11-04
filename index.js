@@ -56,4 +56,5 @@ function hash() {
     document.getElementById("output").innerHTML ="#memesammaaz"+ genrated.join(" ");
     a.style.border = "2px solid black";
     return true;
-  } 
+  }
+}
