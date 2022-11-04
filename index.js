@@ -12,6 +12,7 @@ function hash() {
     "#round2hellmoradabad",
     "#desi",
     "#round2hell",
+    "#memesammaaz",
     "#m_e_m_e_s_w_0_r_l_d",
     "#round2hollywood",
     "#round2hellofficial",
@@ -44,10 +45,6 @@ function hash() {
     "#hoodmemes",
     "#memesoftheday",
   ];
-  // const genrated = hashtag.sort(() => Math.random() - Math.random()).slice(0, x-1);
-  // document.getElementById("output").innerHTML ="#m_e_m_e_s_w_0_r_l_d "+ genrated.join(" ");
-  // a.style.border = "2px solid black";
-
   let y = document.getElementById("bt2");
   if (x<10) {
     alert("value must be grater then 10 and less than or equal to 30");
@@ -56,11 +53,7 @@ function hash() {
   }
   else {
     const genrated = hashtag.sort(() => Math.random() - Math.random()).slice(0, x-1);
-  document.getElementById("output").innerHTML ="#m_e_m_e_s_w_0_r_l_d "+ genrated.join(" ");
-  a.style.border = "2px solid black";
-  return true;
-  }
-  // } else if (x > 30) {
-  //   alert("value must be less than 30");
-  // } 
-}
+    document.getElementById("output").innerHTML ="#memesammaaz"+ genrated.join(" ");
+    a.style.border = "2px solid black";
+    return true;
+  } 
