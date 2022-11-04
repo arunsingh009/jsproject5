@@ -13,15 +13,31 @@ function hash() {
     "#indianmemes","#indianmemesdaily","#indianmemestore","#indianmemestroll","#indianmemesofficial","#indianmemesfactory","#indianmemes😂😂😂","#indianmemesforyou","#indianmemeslover","#indianmemesstore","#indianmemes09","#indianmemesvideos","#indianmemes","#indianmemescommunity","#indianmemeslol","#indianmemesunited","#indianmemespage","#indianmemesdaly","#indianmemestho","#indianmemse","#indianmemes12","#memesammaaz","#indianmemesdailyindianjokesi","#indianmemesactor","#indianmemest","#indianmemesforedgyteens","#indianmemstrolls","#indianmemes2","#indianmemesry","#indianmemsry","#indianmemestores","#indianmemescrackmeup","#indianmemesdily","#indianmeesdily","#indianmemesvideo","#indianmemes😂","#indianmemesl","#indianmemeservice","#indianmemesbts","#indianmemesdailymemes","#indianmemestroll🤣🤣","#indianmemeskakida","#indianmemescompilation","#indianmemeervice","#indianmemesdialy",
   // "","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",
   ];
+
+  var op = getOption();
   if (x<10) {
     alert("value must be grater then 10 and less than or equal to 30");
   }else if(x>30) {
     alert("value must be grater then 10 and less than or equal to 30");
   }
   else {
-    const genrated = old.sort(() => Math.random() - Math.random()).slice(0, x-1);
+    var genrated;
+    if (op=="old"){
+       genrated = old.sort(() => Math.random() - Math.random()).slice(0, x-1);
+    }else if (op=="indian"){
+       genrated = indian.sort(() => Math.random() - Math.random()).slice(0, x-1);
+    }else if(op=="new"){
+      genrated = worldWide.sort(() => Math.random() - Math.random()).slice(0, x-1);
+    }
     document.getElementById("output").innerHTML ="#memesammaaz "+ genrated.join(" ");
     a.style.border = "2px solid black";
     return true;
+    
   }
+}
+
+function getOption() {
+  selectElement = document.querySelector('#category');
+  output = selectElement.value;
+  return output;
 }
